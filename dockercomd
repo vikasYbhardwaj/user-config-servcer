@@ -1,0 +1,56 @@
+curl http://localhost:8762/
+
+sudo yum install java-1.8.0
+sudo yum remove java-1.7.0-openjdk
+
+docker run -p 8762:8762 user-eureka-server
+spring-cloud-config-server-gitrepo-0.0.1-SNAPSHOT.jar
+
+UserZuul-0.0.1-SNAPSHOT.jar
+
+docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=vikas  -d mysql:latest
+
+User-Service-0.0.1-SNAPSHOT.jar
+
+
+One liner to stop / remove all of Docker containers:
+
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+
+[ec2-user@ip-172-31-29-134 ~]$ docker exec -it d84b0f3d5cb4 /bin/sh           to enter in current container
+
+
+home/ec2-user/jars/
+
+
+ docker ps -aqf name=localhost  when container give already exist error 
+ echo $(docker ps -aqf name=localhost)
+ 
+ 
+docker run  -d -p 3306:3306--name localhost -e MYSQL_ROOT_PASSWORD=vikas -d mysql:8.0 
+ 
+ 
+ 
+docker run -d -p 3306:3306  -e MYSQL_USER=root -e MYSQL_ROOT_PASSWORD=vikas  mysql:8.0
+ 
+docker run -p 8080:8080 --name userdb-server --link localhost:mysql -d userdb-server
+ 
+ 
+ 
+       ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2018.03-release-notes/
+[ec2-user@ip-172-31-29-134 ~]$ docker exec -it 6be2e92d71be bash
+root@6be2e92d71be:/# mysql -uroot -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.11 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
