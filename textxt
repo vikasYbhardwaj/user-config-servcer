@@ -1,0 +1,244 @@
+scp -i myAmazonKey.pem phpMyAdmin-3.4.5-all-languages.tar.gz ec2-user@mec2-50-17-16-67.compute-1.amazonaws.com:~/.kasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/worksp                                                                                                                                  ace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER (master)
+$ git remote add origin git@github.com:vikasYbhardwaj/user-eureka-server.git
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/worksp                                                                                                                                  ace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER (master)
+$ git push -u origin master
+Counting objects: 29, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (29/29), 47.36 KiB | 0 bytes/s, done.
+Total 29 (delta 0), reused 0 (delta 0)
+To git@github.com:vikasYbhardwaj/user-eureka-server.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/worksp                                                                                                                                  ace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER (master)
+$ git push -u origin master
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/worksp                                                                                                                                  ace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/worksp                                                                                                                                  ace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER (master)
+$ git push -u origin master
+Warning: Permanently added the RSA host key for IP address '192.30.253.113' to t                                                                                                                                  he list of known hosts.
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/worksp                                                                                                                                  ace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER (master)
+$ pwd
+/c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER (master)
+$ cd target/
+l
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER/target (master)
+$ ls
+classes/  generated-sources/  generated-test-sources/  maven-archiver/  maven-status/  surefire-reports/  test-classes/  User-Eureka-Server-0.0.1-SNAPSHOT.jar  User-Eureka-Server-0.0.1-SNAPSHOT.jar.original
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER/target (master)
+$ scp User-Eureka-Server-0.0.1-SNAPSHOT.jar -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem ec2-user@13.232.114.104:/home/ec2-user/
+The authenticity of host '13.232.114.104 (13.232.114.104)' can't be established.
+ECDSA key fingerprint is SHA256:KCeCX7/OjFz867agv0IcCeprH4QBn+GBEyMEuzcf/To.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '13.232.114.104' (ECDSA) to the list of known hosts.
+Permission denied (publickey).
+lost connection
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER/target (master)
+$ ssh -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem ec2-user@13.232.114.10413.232.114.104
+ssh: Could not resolve hostname 13.232.114.10413.232.114.104: Name or service not known
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER/target (master)
+$ ssh -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem ec2-user@13.232.114.104
+Last login: Thu Jun 14 12:07:04 2018 from 157.49.40.81
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2018.03-release-notes/
+[ec2-user@ip-172-31-29-134 ~]$ exit
+logout
+Connection to 13.232.114.104 closed.
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER/target (master)
+$ scp User-Eureka-Server-0.0.1-SNAPSHOT.jar -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem ec2-user@13.232.114.104
+ec2-user@13.232.114.104: No such file or directory
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER/target (master)
+$ ssh -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem ec2-user@13.232.114.104
+Last login: Thu Jun 14 12:13:36 2018 from 157.49.40.81
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2018.03-release-notes/
+[ec2-user@ip-172-31-29-134 ~]$ pwd
+/home/ec2-user
+[ec2-user@ip-172-31-29-134 ~]$ exit
+logout
+Connection to 13.232.114.104 closed.
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER/target (master)
+$ scp User-Eureka-Server-0.0.1-SNAPSHOT.jar -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem ec2-user@13.232.114.104:/home/ec2-user
+Permission denied (publickey).
+lost connection
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER/target (master)
+$ ssh -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem ec2-user@13.232.114.104
+Last login: Thu Jun 14 12:13:52 2018 from 157.49.123.165
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2018.03-release-notes/
+[ec2-user@ip-172-31-29-134 ~]$ sudo su
+[root@ip-172-31-29-134 ec2-user]# mkdir jars
+[root@ip-172-31-29-134 ec2-user]# chmod 77 -R jars
+[root@ip-172-31-29-134 ec2-user]# cd jars/
+[root@ip-172-31-29-134 jars]# pwd
+/home/ec2-user/jars
+[root@ip-172-31-29-134 jars]# exit
+exit
+[ec2-user@ip-172-31-29-134 ~]$ exit
+logout
+Connection to 13.232.114.104 closed.
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER/target (master)
+$ scp User-Eureka-Server-0.0.1-SNAPSHOT.jar -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem ec2-user@13.232.114.104:/home/ec2-user/jars
+Permission denied (publickey).
+lost connection
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER/target (master)
+$ ssh -vvv User-Eureka-Server-0.0.1-SNAPSHOT.jar -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem ec2-user@13.232.114.104:/home/ec2-user/jars
+OpenSSH_7.1p2, OpenSSL 1.0.2h  3 May 2016
+debug1: Reading configuration data /etc/ssh/ssh_config
+ssh: Could not resolve hostname user-eureka-server-0.0.1-snapshot.jar: Name or service not known
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER/target (master)
+$ scp -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem  User-Eureka-Server-0.0.1-SNAPSHOT.jar ec2-user@13.232.114.104:/home/ec2-user/jars
+User-Eureka-Server-0.0.1-SNAPSHOT.jar                                                                                                                                            12% 5888KB 683.3KB/s - stalled -Connection reset by 13.232.114.104
+lost connection
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER/target (master)
+$ scp -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem  User-Eureka-Server-0.0.1-SNAPSHOT.jar ec2-user@13.232.114.104:/home/ec2-user/jars
+User-Eureka-Server-0.0.1-SNAPSHOT.jar                                                                                                                                            24%   11MB 450.0KB/s - stalled -Connection reset by 13.232.114.104
+lost connection
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER/target (master)
+$ scp -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem  User-Eureka-Server-0.0.1-SNAPSHOT.jar ec2-user@ec2-13-232-114-104.ap-south-1.compute.amazonaws.com:/home/ec2-user/jars
+The authenticity of host 'ec2-13-232-114-104.ap-south-1.compute.amazonaws.com (13.232.114.104)' can't be established.
+ECDSA key fingerprint is SHA256:KCeCX7/OjFz867agv0IcCeprH4QBn+GBEyMEuzcf/To.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'ec2-13-232-114-104.ap-south-1.compute.amazonaws.com' (ECDSA) to the list of known hosts.
+User-Eureka-Server-0.0.1-SNAPSHOT.jar                                                                                                                                            21% 9984KB 277.1KB/s - stalled -Connection reset by 13.232.114.104
+lost connection
+
+vikasybhardwajvst@INPC07056D MINGW64 /c/users/vikasybhardwajvst/documents/workspace-sts-3.9.4.RELEASE/USER-EUREKA-SERVER/target (master)
+$ scp -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem  User-Eureka-Server-0.0.1-SNAPSHOT.jar ec2-13-127-127-130.ap-south-1.compute.amazonaws.com:/home/ec2-user/jars
+User-Eureka-Server-0.0.1-SNAPSHOT.jar
+
+
+
+
+ec2-13-127-127-130.ap-south-1.compute.amazonaws.com
+scp -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem  UserZuul-0.0.1-SNAPSHOT.jar ec2-user@ec2-13-232-114-104.ap-south-1.compute.amazonaws.com:/home/ec2-user/jars
+
+
+
+
+
+
+
+[ec2-user@ip-172-31-29-134 user-eureka-server]$ ls
+Dockerfile  mvnw  mvnw.cmd  pom.xml  src  target
+[ec2-user@ip-172-31-29-134 user-eureka-server]$ docker build -t "user-eureka-server:Dockerfile"
+"docker build" requires exactly 1 argument.
+See 'docker build --help'.
+
+Usage:  docker build [OPTIONS] PATH | URL | - [flags]
+
+Build an image from a Dockerfile
+[ec2-user@ip-172-31-29-134 user-eureka-server]$ docker build -t "user-eureka-server".
+invalid argument "user-eureka-server." for "-t, --tag" flag: invalid reference format
+See 'docker build --help'.
+[ec2-user@ip-172-31-29-134 user-eureka-server]$ docker build -t "user-eureka-server" .
+Sending build context to Docker daemon    236kB
+Step 1/4 : FROM openjdk:8
+ ---> a2fbe0dde8c0
+Step 2/4 : ADD home/ec2-user/jars/User-Eureka-Server-0.0.1-SNAPSHOT.jar User-Eureka-Server-0.0.1-SNAPSHOT
+ADD failed: stat /var/lib/docker/tmp/docker-builder003969532/home/ec2-user/jars/User-Eureka-Server-0.0.1-SNAPSHOT.jar: no such file or directory
+[ec2-user@ip-172-31-29-134 user-eureka-server]$ git pull origin master
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/vikasYbhardwaj/user-eureka-server
+ * branch            master     -> FETCH_HEAD
+   e72b5a1..77fab28  master     -> origin/master
+Updating e72b5a1..77fab28
+Fast-forward
+ Dockerfile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[ec2-user@ip-172-31-29-134 user-eureka-server]$ docker build -t "user-eureka-server" .
+Sending build context to Docker daemon  241.7kB
+Step 1/4 : FROM openjdk:8
+ ---> a2fbe0dde8c0
+Step 2/4 : ADD jars/User-Eureka-Server-0.0.1-SNAPSHOT.jar User-Eureka-Server-0.0.1-SNAPSHOT
+ADD failed: stat /var/lib/docker/tmp/docker-builder278988587/jars/User-Eureka-Server-0.0.1-SNAPSHOT.jar: no such file or directory
+[ec2-user@ip-172-31-29-134 user-eureka-server]$ cd
+[ec2-user@ip-172-31-29-134 ~]$ ls
+jars  user-eureka-server
+[ec2-user@ip-172-31-29-134 ~]$ pwd
+/home/ec2-user
+[ec2-user@ip-172-31-29-134 ~]$ pwd
+/home/ec2-user
+[ec2-user@ip-172-31-29-134 ~]$ ls
+jars  user-eureka-server
+[ec2-user@ip-172-31-29-134 ~]$ cd user-eureka-server/
+[ec2-user@ip-172-31-29-134 user-eureka-server]$ ls
+Dockerfile  mvnw  mvnw.cmd  pom.xml  src  target
+[ec2-user@ip-172-31-29-134 user-eureka-server]$ vi Dockerfile
+[ec2-user@ip-172-31-29-134 user-eureka-server]$ docker build -t "user-eureka-server" .
+Sending build context to Docker daemon  241.7kB
+Step 1/4 : FROM openjdk:8
+ ---> a2fbe0dde8c0
+Step 2/4 : ADD ./../jars/User-Eureka-Server-0.0.1-SNAPSHOT.jar User-Eureka-Server.jar
+ADD failed: Forbidden path outside the build context: ../jars/User-Eureka-Server-0.0.1-SNAPSHOT.jar ()
+[ec2-user@ip-172-31-29-134 user-eureka-server]$ cd ../jars/
+[ec2-user@ip-172-31-29-134 jars]$ cp ../
+.bash_history       .bash_profile       jars/               .pki/               user-eureka-server/
+.bash_logout        .bashrc             .m2/                .ssh/               .viminfo
+[ec2-user@ip-172-31-29-134 jars]$ cp ../user-eureka-server/Dockerfile  .
+[ec2-user@ip-172-31-29-134 jars]$ ls
+Dockerfile  User-Eureka-Server-0.0.1-SNAPSHOT.jar
+[ec2-user@ip-172-31-29-134 jars]$ vi Dockerfile
+[ec2-user@ip-172-31-29-134 jars]$ vi Dockerfile
+[ec2-user@ip-172-3 1-29-134 jars]$ docker build -t "user-eureka-server" .
+Sending build context to Docker daemon  48.51MB
+Step 1/4 : FROM openjdk:8
+ ---> a2fbe0dde8c0
+Step 2/4 : ADD ./User-Eureka-Server-0.0.1-SNAPSHOT.jar User-Eureka-Server.jar
+ ---> 98e8f0342630
+Step 3/4 : EXPOSE 8762
+ ---> Running in 50920b4ab33b
+Removing intermediate container 50920b4ab33b
+ ---> bbfcdce13342
+Step 4/4 : ENTRYPOINT ["java","-jar","User-Eureka-Server.jar"]
+ ---> Running in 13f4ff389075
+Removing intermediate container 13f4ff389075
+ ---> 0e9976944fcf
+Successfully built 0e9976944fcf
+Successfully tagged user-eureka-server:latest
+[ec2-user@ip-172-31-29-134 jars]$
+
+
+
+scp -i /c/Users/vikasybhardwajvst/Desktop/firstapp.pem   User-Service-0.0.1-SNAPSHOT.jar ec2-user@ec2-13-232-114-104.ap-south-1.compute.amazonaws.com:/home/ec2-user/jars
+
